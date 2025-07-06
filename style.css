@@ -1,170 +1,186 @@
 body {
   margin: 0;
   font-family: "Cormorant Infant", serif;
-  background: #f9f8f6;
-  color: #000;
+  background-color: #fefaf6;
+  color: #2d2d2d;
+}
+
+.invitation-card {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header .site {
+  text-align: center;
+  color: #880e4f;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.initials {
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+}
+
+.initials span {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.photo-block {
   text-align: center;
 }
 
-.hero {
-  padding: 50px 20px;
+.photo-frame {
+  margin-top: 1rem;
+  border: 3px dashed #880e4f;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.hero h1 {
-  font-family: "Great Vibes", cursive;
-  font-size: 80px;
-  margin: 0;
-}
-
-.hero h1 span {
+.photo-frame img {
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
-.date-section {
-  padding: 20px;
+.date-block {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.date-section h2 {
-  font-size: 36px;
+.calendar p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.text {
-  font-size: 18px;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 10px;
+table {
+  display: inline-block;
+  margin: 0 0.3rem;
+  padding: 0.3rem 0.6rem;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.names {
-  font-size: 28px;
-  font-style: italic;
-  margin-top: 30px;
-  text-decoration: underline;
-}
-
-.time {
-  font-size: 32px;
-  margin: 10px 0;
-}
-
-.calendar table {
-  border-collapse: separate;
-  border-spacing: 10px 10px; /* горизонталь, вертикаль */
-  margin: 0 auto;
-  font-size: 25px;
+.days td {
+  padding: 0.8rem;
   text-align: center;
 }
 
-.calendar th,
-.calendar td {
-  width: 40px;
-  height: 40px;
-}
-
-.highlight {
-  position: relative;
-  font-weight: bold;
-}
-
-.highlight::before {
-  content: "";
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  width: 40px;
-  height: 35px;
-  transform: translate(-50%, -50%);
-  border: 1.5px solid red;
+.selected {
+  background: #880e4f;
+  color: #fff;
   border-radius: 50%;
 }
 
+.description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 .location {
-  padding: 30px 20px;
-}
-
-.location h3 {
-  font-size: 26px;
-}
-
-.location p {
-  font-size: 18px;
-}
-
-.footer {
-  padding: 20px;
-  font-style: italic;
-}
-.music-control {
-  margin-bottom: 20px;
-}
-
-#playButton {
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.location-icon-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.location-icon-box i {
-  font-size: 48px;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.location-label {
-  border: 2px solid #000;
-  padding: 6px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #000;
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-}
-.countdown-container {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-}
-
-.countdown {
-  display: flex;
-  gap: 20px;
-  padding: 15px 30px;
-  border: 2px solid #000;
-  border-radius: 40px;
-  background: #fff;
-  font-family: "Playfair Display", serif;
-}
-
-.countdown div {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #fff4f7;
+  border-radius: 1rem;
   text-align: center;
 }
 
-.countdown span {
-  display: block;
-  font-size: 28px;
-  font-weight: bold;
+.map-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background: #880e4f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
 }
 
-.countdown p {
-  margin: 0;
-  font-size: 18px;
+.schedule-section {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 1rem;
 }
 
-.fade-in {
+.schedule-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.schedule {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.schedule li {
+  margin: 0.5rem 0;
+}
+
+.wishes {
+  margin-top: 2rem;
+  background: #fff6e9;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.quote {
+  margin-top: 2rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.quote-text {
+  color: #880e4f;
+}
+
+.animate {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: all 2s ease-out;
+  will-change: opacity, transform;
 }
 
-.fade-in.visible {
+/* Картинки: слева направо */
+.slide-left {
+  transform: translateX(-50px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Картинки: справа налево */
+.slide-right {
+  transform: translateX(50px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Текст: снизу вверх */
+.fade-up {
+  transform: translateY(40px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-down {
+  transform: translateY(-40px);
+}
+.fade-down.visible {
   opacity: 1;
   transform: translateY(0);
 }
