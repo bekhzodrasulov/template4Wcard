@@ -104,10 +104,16 @@ body {
   font-style: italic;
   background-color: #fefaf6;
   color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .invitation-card {
-  max-width: 800px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
   margin: auto;
   background: #fff;
   padding: 2rem;
@@ -299,4 +305,94 @@ table {
 .fade-down.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* === Responsive (адаптивность) === */
+@media (max-width: 768px) {
+  .invitation-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .initials {
+    font-size: 2rem;
+  }
+
+  .initials span {
+    font-size: 1rem;
+  }
+
+  .photo-frame {
+    border-width: 2px;
+  }
+
+  .calendar p {
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  .days td {
+    padding: 0.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .schedule-section h3,
+  .location h3,
+  .wishes h3 {
+    font-size: 1.3rem;
+  }
+
+  .schedule {
+    font-size: 1rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .map-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .invitation-card {
+    padding: 1rem;
+  }
+
+  .initials {
+    font-size: 1.8rem;
+  }
+
+  .description,
+  .schedule,
+  .wishes p,
+  .quote {
+    font-size: 0.95rem;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .map-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .social {
+    gap: 1rem;
+  }
+
+  .social img {
+    width: 18px;
+    height: 18px;
+  }
 }
