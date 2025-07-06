@@ -312,6 +312,7 @@ table {
   .invitation-card {
     padding: 1.5rem;
     border-radius: 12px;
+    max-width: 400px;
   }
 
   .initials {
@@ -355,16 +356,12 @@ table {
   .quote {
     font-size: 1rem;
   }
-
-  .map-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.95rem;
-  }
 }
 
 @media (max-width: 480px) {
   .invitation-card {
     padding: 1rem;
+    max-width: 300px;
   }
 
   .initials {
@@ -380,11 +377,6 @@ table {
 
   table {
     font-size: 14px;
-  }
-
-  .map-btn {
-    width: 100%;
-    font-size: 1rem;
   }
 
   .social {
